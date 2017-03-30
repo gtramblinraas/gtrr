@@ -18,31 +18,7 @@
 		vertical-align: baseline;
 	}
 
-	blockquote.twitter-tweet {
-	  display: inline-block;
-	  padding: 16px;
-	  margin: 10px 0;
-	  max-width: 468px;
-	  border: #CFB53B 1px solid;
-	  border-top-color: #CFB53B;
-	  border-bottom-color: #CFB53B;
-	  border-radius: 5px;
-	  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-	  font: bold 14px/18px Helvetica, Arial, sans-serif;
-	  color: #FFF;
-	}
-
-	blockquote.twitter-tweet p {
-	  font: normal 14px/18px Helvetica, Arial, sans-serif;
-	  margin: 0 5px 10px 0;
-	}
-
-	blockquote.twitter-tweet a[href^="https://twitter.com"] {
-	  font-weight: normal;
-	  color: #CFB53B;
-	  font-size: 12px;
-	}
-
+	
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -3027,7 +3003,7 @@
 
 		.spotlight.left .content, .spotlight.right .content {
 			height: 101%;
-			padding: 2em 2em;
+			padding: 2em 1.5em;
 			top: 0;
 			width: 28em;
 		}
