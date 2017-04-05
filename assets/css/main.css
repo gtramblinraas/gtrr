@@ -43,11 +43,99 @@
 	  font-size: 12px;
 	}
 
-	#member {
-		width: 500px;
-		height: 500px;
-		overflow: hidden;
+	#memberban {
+		background-attachment: fixed;
+		background-image: url("../../images/members/team.jpg");
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		min-height: 250vh;
+		position: relative;
+		text-align: center;
+		z-index: 21;
 	}
+
+	#memberban:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		width: 1%;
+	}
+
+	#memberban:after {
+		background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
+		background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
+		background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65)),;
+		background-image: linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	#memberban .memberpics {
+		float: center
+		display: inline-block;
+		max-width: 100%;
+		padding: 2em;
+		position: relative;
+		text-align: center;
+		vertical-align: top;
+		z-index: 21;
+	}
+	#memberban .memberpics  h2 {
+		font-size: 1.5em;
+		margin: 0;
+	}
+	#memberban .content {
+		display: inline-block;
+		margin-right: 0%;
+		max-width: 100%;
+		padding: 2em;
+		position: relative;
+		text-align: center;
+		vertical-align: top;
+		z-index: 21;
+	}
+		#memberban .content header {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+			#memberban .content header h2 {
+				font-size: 2.5em;
+				margin: 0;
+			}
+
+			#memberban .content header p {
+				margin: 0.5em 0 0 0;
+				top: 0;
+			}
+
+		#memberban .content.propic {
+			float: center;
+			height:250px;
+			width:250px;
+			overflow:hidden;
+			text-align: center;
+		}
+
+				#memberban .content.propic img {
+					min-width: 200px;
+					width: 100%;
+					position: relative;
+				}
+
+
+		#memberban .content.propic {
+		}
+
+body.is-touch #memberban {
+	background-attachment: scroll;
+}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -2154,7 +2242,6 @@
 		font-size: 1.5em;
 		margin-top: 0.25em;
 		line-height: 1.75em;
-
 	}
 
 	header h4 + p,
@@ -2168,11 +2255,11 @@
 	header.major {
 		margin: 0 0 4em 0;
 		position: relative;
-		text-align: center;
+		text-align: right;
 	}
 
 		header.major:after {
-			background: #CFB53B;
+			background: ;
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -3369,7 +3456,6 @@
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
 		background-image: url("../../images/banner.jpg");
 		background-position: center center;
 		background-size: cover;
@@ -3389,10 +3475,10 @@
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95));
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95));
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)),;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95));
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65)),;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
 			content: '';
 			display: block;
 			height: 100%;
