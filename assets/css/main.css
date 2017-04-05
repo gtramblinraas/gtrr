@@ -42,7 +42,6 @@
 	  color: #CFB53B;
 	  font-size: 12px;
 	}
-
 	#memberban {
 		background-attachment: fixed;
 		background-image: url("../../images/members/team.jpg");
@@ -103,11 +102,14 @@
 		#memberban .content header {
 			display: inline-block;
 			vertical-align: middle;
+			position: relative;
 		}
 
 			#memberban .content header h2 {
 				font-size: 2.5em;
 				margin: 0;
+				line-height: 1em;
+				position: relative;
 			}
 
 			#memberban .content header p {
@@ -2275,6 +2277,7 @@ body.is-touch #memberban {
 		font-size: 5em;
 		margin-top: 0.75em;
 		line-height: 0em;
+
 	}
 
 	header p {
@@ -3634,6 +3637,9 @@ body.is-touch #memberban {
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
+			header h3 {
+				line-height: 1em;
+			}
 
 	}
 
@@ -3691,11 +3697,20 @@ body.is-touch #memberban {
 /* Medium */
 
 	@media screen and (max-width: 980px) {
-
+		#memberban hr {
+			width: 600px;
+			color: #CFB53B;
+			margin: 2em;
+			border: 1px solid;
+			top: 0;
+		}
 		/* Basic */
 
 			body, input, select, textarea {
 				font-size: 12pt;
+			}
+			header h3 {
+				line-height: 1em;
 			}
 
 		/* Spotlight */
@@ -3778,7 +3793,13 @@ body.is-touch #memberban {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
-
+		#memberban hr {
+			width: 400px;
+			color: #CFB53B;
+			margin: 2em;
+			border: 1px solid;
+			top: 0;
+		}
 			html, body {
 				overflow-x: hidden;
 			}
@@ -3811,6 +3832,9 @@ body.is-touch #memberban {
 
 			header h3 + p {
 				font-size: 1em;
+			}
+			header h3 {
+				line-height: 1em;
 			}
 
 			header h4 + p,
@@ -4071,7 +4095,13 @@ body.is-touch #memberban {
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
-
+		#memberban hr {
+			width: 200px;
+			color: #CFB53B;
+			margin: 2em;
+			border: 1px solid;
+			top: 0;
+		}
 		/* Basic */
 
 			html, body {
@@ -4080,6 +4110,9 @@ body.is-touch #memberban {
 
 			body, input, select, textarea {
 				font-size: 12pt;
+			}
+			header h3 {
+				line-height: 1em;
 			}
 
 		/* List */
