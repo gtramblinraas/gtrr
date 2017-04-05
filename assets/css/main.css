@@ -115,6 +115,14 @@
 				top: 0;
 			}
 
+			#memberban hr {
+				width: 700px;
+				color: #CFB53B;
+				margin: 2em;
+				border: 1px solid;
+				top: 0;
+			}
+
 		#memberban .content.propic {
 			float: center;
 			height:250px;
