@@ -18,6 +18,10 @@
 		vertical-align: baseline;
 	}
 
+	iframe {
+	    border: none;
+	}
+	
 	blockquote.twitter-tweet {
 	  display: inline-block;
 	  padding: 16px;
