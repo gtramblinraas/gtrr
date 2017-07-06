@@ -21,7 +21,7 @@
 	iframe {
 	    border: none;
 	}
-	
+
 	blockquote.twitter-tweet {
 	  display: inline-block;
 	  padding: 16px;
@@ -46,6 +46,8 @@
 	  color: #CFB53B;
 	  font-size: 12px;
 	}
+
+
 	#memberban {
 		background-attachment: fixed;
 		background-image: url("../../images/members/team.jpg");
@@ -139,6 +141,7 @@
 			width:250px;
 			overflow:hidden;
 			text-align: center;
+			vertical-align: middle;
 			display: inline-block;
 		}
 
@@ -233,6 +236,213 @@
 body.is-touch #memberban {
 	background-attachment: scroll;
 }
+
+
+
+#tmemberban {
+	background-attachment: fixed;
+	background-image: url("../../images/members/team.jpg");
+	background-position: center center;
+	background-size: cover;
+	box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+	min-height: 70vh;
+	position: relative;
+	text-align: center;
+	z-index: 21;
+}
+
+#tmemberban:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 1%;
+}
+
+#tmemberban:after {
+	background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
+	background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
+	background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65)),;
+	background-image: linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#tmemberban .memberpics {
+	float: center
+	display: inline-block;
+	max-width: 100%;
+	padding: 1em;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 21;
+}
+#tmemberban .memberpics  h2 {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 1em 0 2em 0;
+}
+
+#tmemberban .memberpics  p {
+	margin: 0em 0 0em 0;
+}
+#tmemberban .content {
+	display: inline-block;
+	margin-right: 0%;
+	max-width: 100%;
+	padding: 4em 0 1em 0;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 21;
+}
+	#tmemberban .content header {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+	}
+
+		#tmemberban .content header h2 {
+			font-size: 2.5em;
+			margin: 0;
+			line-height: 1em;
+			position: relative;
+		}
+
+		#tmemberban .content header p {
+			margin: 0.5em 0 0 0;
+			top: 0;
+		}
+
+		#tmemberban hr {
+			width: 700px;
+			color: #CFB53B;
+			margin: 2em;
+			border: 1px solid;
+			top: 0;
+		}
+
+	#tmemberban .content.propic {
+		float: center;
+		height:250px;
+		width:250px;
+		border: 1px solid #CFB53B;
+		margin: 25px 25px 25px 25px;
+		overflow:hidden;
+		text-align: center;
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+			#tmemberban .content.propic img {
+				min-width: 200px;
+				width: 100%;
+				position: relative;
+				z-index: 0;
+			}
+
+	#tmemberban .content.propic.overlay {
+	  position: absolute;
+	  bottom: -25px;
+	  left: -25px;
+	  right: 0;
+	  background-color: rgba(207, 181, 59, 0.85);
+	  border: 1px hidden transparent !important;
+	  overflow: hidden;
+	  width: 100%;
+	  height: 0%;
+	  opacity: 0;
+	}
+
+	#tmemberban .content.propic.overlay .text {
+		word-wrap: normal !important;
+		font-size: 2em !important;
+		font-weight: bold !important;
+		color: white;
+	}
+
+	#tmemberban .content.propic:hover .overlay {
+		opacity: 1;
+	  height: 100%;
+	}
+
+
+
+	#tmemberban .content.propics {
+		float: center;
+		height:100px;
+		width:100px;
+		overflow:hidden;
+		text-align: center;
+		display: inline-block;
+	}
+
+			#tmemberban .content.propics img {
+				min-width: 75px;
+				width: 100%;
+				position: relative;
+				z-index: 0;
+			}
+
+	#tmemberban .content.propics {
+		padding: 0.5em 0.5em 0.5em 0.5em;
+	}
+	#tmemberban .content.propics.overlay {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background-color: rgba(255,255,255,0.6);
+	  overflow: hidden;
+	  width: 100%;
+	  opacity: 0;
+	  transition: .4s ease;
+	}
+
+	#tmemberban .content.propics:hover .overlay {
+		opacity: 1;
+	}
+
+	#tmemberban .text {
+	  white-space: nowrap;
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  overflow: hidden;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	}
+	#tmemberban .texts {
+	  white-space: nowrap;
+	  color: white;
+	  font-size: 10px;
+	  position: absolute;
+	  overflow: hidden;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	}
+
+body.is-touch #tmemberban {
+background-attachment: scroll;
+}
+
+
+
+
+
+
+
+
+
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -1804,6 +2014,7 @@ body.is-touch #memberban {
 			border-bottom-color: transparent;
 		}
 
+
 	strong, b {
 		color: #CFB53B;
 		font-weight: 500;
@@ -2364,6 +2575,21 @@ body.is-touch #memberban {
 			max-width: 20em;
 			width: 75%;
 		}
+
+		header.minor {
+			margin: 0 0 4em 0;
+			position: relative;
+			text-align: center;
+		}
+
+			header.minor:after {
+				background: ;
+				content: '';
+				display: inline-block;
+				height: 0.2em;
+				max-width: 20em;
+				width: 75%;
+			}
 
 	footer.major {
 		margin: 4em 0 0 0;
@@ -3630,6 +3856,87 @@ body.is-touch #memberban {
 	body.is-touch #banner {
 		background-attachment: scroll;
 	}
+
+	/* Centered Text Banner */
+
+		#cbanner {
+			background-attachment: fixed;
+			background-image: url("../../images/tryouts.png");
+			background-position: center center;
+			background-size: cover;
+			box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+			max-height: 60vh;
+			position: relative;
+			text-align: center;
+			z-index: 21;
+		}
+
+			#cbanner:before {
+				content: '';
+				display: inline-block;
+				height: 60vh;
+				vertical-align: middle;
+				width: 1%;
+			}
+
+			#cbanner:after {
+				background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
+				background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
+				background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65)),;
+				background-image: linear-gradient(top, rgba(23, 24, 32, 0.65), rgba(23, 24, 32, 0.65));
+				content: '';
+				display: block;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+
+			#cbanner .content {
+				display: inline-block;
+				margin-right: 1%;
+				max-width: 95%;
+				padding: 6em;
+				position: relative;
+				text-align: center;
+				vertical-align: middle;
+				z-index: 1;
+			}
+
+				#cbanner .content header {
+					display: inline-block;
+					vertical-align: middle;
+				}
+
+					#cbanner .content header h2 {
+						font-size: 2.5em;
+						margin: 0;
+					}
+
+					#cbanner .content header p {
+						margin: 0.5em 0 0 0;
+						top: 0;
+					}
+
+				#cbanner .content .image {
+					border-radius: 100%;
+					display: inline-block;
+					height: 18em;
+					margin-left: 3em;
+					vertical-align: middle;
+					width: 18em;
+				}
+
+					#cbanner .content .image img {
+						border-radius: 100%;
+						display: block;
+						width: 100%;
+					}
+
+		body.is-touch #cbanner {
+			background-attachment: scroll;
+		}
 
 /* Footer */
 
